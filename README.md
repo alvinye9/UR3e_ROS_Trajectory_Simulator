@@ -6,7 +6,7 @@ As a baseline, feel free to use the following link to generate a custom Lissajou
 
 To generate a trajectory .csv based on a custom Lissajous curve, change the parameters on Lines 621-653 of the `custom_trajectory_generator.py` script.
 
-To generate a trajectory .csv using your own custom curve, you can write additional helper functions to do so. See get_letter_trajectory() and uncomment lines 656-661
+To generate a trajectory .csv using your own custom curve, you can write additional helper functions to do so. See the `get_letter_trajectory()` function and uncomment lines 656-661 for reference
 
 After setting up parameters, generate your csv by running the following within the `UR3e_ROS_Trajectory_Simulator/python_scripts` directory:
 ```
@@ -14,6 +14,8 @@ python3 custom_trajectory_generator.py
 ```
 
 It may take up to a few minutes to generate the csv depending on how complex your curve is.
+
+(optional) Additional parameters such as end-effector configuration tolerances can also be edited within the python script.
 
 ### Step 2: Simulating Trajectory in RVIZ
 For Step 2, you will need to download and build the packages within the `ws3` workspace, which have been provided for you. 
